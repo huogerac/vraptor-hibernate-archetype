@@ -1,0 +1,14 @@
+-----------------
+VRaptor archetype
+-----------------
+
+Install:
+mvn install:install-file -DgroupId=br.com.caelum.vraptor.archetypes -DartifactId=vraptor-hibernate-archetype -Dversion=0.0.1 -Dpackaging=jar -Dfile=vraptor-mongodb-archetype-0.0.1.jar -DgeneratePom=true
+
+
+Execute:
+i)
+mvn archetype:generate -DarchetypeGroupId=br.com.caelum.vraptor.archetypes -DarchetypeArtifactId=vraptor-hibernate-archetype -DarchetypeVersion=0.0.1
+
+ii)
+mvn -Dwtpversion=1.0 eclipse:eclipse
