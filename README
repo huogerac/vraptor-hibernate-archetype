@@ -1,12 +1,13 @@
------------------
-VRaptor archetype
------------------
+-------------------------------------------------------
+ VRaptor Archetype - 0.0.1
+ (VRaptor 3.3.1 and Hibernate 3.3.2 maven dependencies)
+-------------------------------------------------------
 
-Install:
+Install: (First time)
 mvn install:install-file -DgroupId=br.com.caelum.vraptor.archetypes -DartifactId=vraptor-hibernate-archetype -Dversion=0.0.1 -Dpackaging=jar -Dfile=vraptor-hibernate-archetype-0.0.1.jar -DgeneratePom=true
 
 
-Execute:
+Execute: (To create a new VRaptor template project)
 i)
 mvn archetype:generate -DarchetypeGroupId=br.com.caelum.vraptor.archetypes -DarchetypeArtifactId=vraptor-hibernate-archetype -DarchetypeVersion=0.0.1
 
