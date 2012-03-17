@@ -89,10 +89,10 @@
 	<dependencies>
 	
 		<dependency>
-		    <groupId>javax</groupId>
-		    <artifactId>javaee-api</artifactId>
-		    <version>6.0</version>
-		    <scope>provided</scope>
+			<groupId>javax</groupId>
+			<artifactId>javaee-api</artifactId>
+			<version>6.0</version>
+			<scope>provided</scope>
 		</dependency>
 
 		<!-- tests -->
@@ -107,7 +107,7 @@
 			<artifactId>jmock-junit4</artifactId>
 			<version>2.5.1</version>
 		</dependency>
-		
+
 		<!-- VRaptor -->
 		<dependency>
 			<groupId>br.com.caelum</groupId>
@@ -128,53 +128,52 @@
 			<groupId>jstl</groupId>
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
-		</dependency>		
-		<dependency>
-		    <groupId>com.thoughtworks.xstream</groupId>
-		    <artifactId>xstream</artifactId>
-		    <version>1.3.1</version>
 		</dependency>
-      	<dependency>
-           <groupId>commons-fileupload</groupId>
-           <artifactId>commons-fileupload</artifactId>
-           <version>1.2.2</version>
-        </dependency>
-        <dependency>
-           <groupId>commons-io</groupId>
-           <artifactId>commons-io</artifactId>
-           <version>1.3.2</version>
-        </dependency>
-        
-	<!-- hibernate -->
-	    <dependency>
-	       <groupId>org.hibernate</groupId>
-	       <artifactId>hibernate-core</artifactId>
-	       <version>3.3.2.GA</version>
-	    </dependency>
-	    <dependency>
-	       <groupId>org.hibernate</groupId>
-	       <artifactId>hibernate-annotations</artifactId>
-	       <version>3.4.0.GA</version>
-	    </dependency>
-	    <dependency>
-	       <groupId>org.hibernate</groupId>
-	       <artifactId>hibernate-commons-annotations</artifactId>
-	       <version>3.3.0.ga</version>
-	    </dependency>
-	    <dependency>
-	       <groupId>org.hibernate</groupId>
-	       <artifactId>hibernate-entitymanager</artifactId>
-	       <version>3.4.0.GA</version>
-	    </dependency> 
+		<dependency>
+			<groupId>com.thoughtworks.xstream</groupId>
+			<artifactId>xstream</artifactId>
+			<version>1.3.1</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-fileupload</groupId>
+			<artifactId>commons-fileupload</artifactId>
+			<version>1.2.2</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>1.3.2</version>
+		</dependency>
+
+		<!-- hibernate -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>3.3.2.GA</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-annotations</artifactId>
+			<version>3.4.0.GA</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-commons-annotations</artifactId>
+			<version>3.3.0.ga</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>3.4.0.GA</version>
+		</dependency>
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-validator</artifactId>
-			<version>4.0.2.GA</version>
+			<version>4.2.0.Final</version>
 		</dependency>
-	    
-	    
-		<!-- Drivers para o hibernate  -->        
-	    <dependency>
+
+		<!-- Drivers para o hibernate -->
+		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<version>5.1.6</version>
@@ -219,6 +218,16 @@
 					<wtpversion>2.0</wtpversion>
 				</configuration>
 			</plugin>
+			
+			<plugin>
+				<groupId>br.com.caelum.vraptor</groupId>
+				<artifactId>vraptor-maven-plugin</artifactId>
+				<version>0.0.1</version>
+				<configuration>
+					<package_root>${groupId}</package_root>
+					<persistenceAPI>hibernate</persistenceAPI>
+				</configuration>				
+			</plugin>				
 			
 		</plugins>
 	</build>

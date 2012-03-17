@@ -3,19 +3,16 @@
 <archetype>
    <id>vraptor-webapp-hibernate</id>
    <sources>
-      <source>src/main/java/controller/ProdutosController.java</source>
-      <source>src/main/java/dao/Dao.java</source>
-      <source>src/main/java/dao/ProdutoDao.java</source>
+      <source>src/main/java/common/GenericDao.java</source>
+      <source>src/main/java/common/Repository.java</source>
       <source>src/main/java/interceptor/AuthenticationException.java</source>
       <source>src/main/java/interceptor/Public.java</source>     
-      <source>src/main/java/model/Produto.java</source>
    </sources>
    <resources>
+      <resource>src/main/resources/hibernate.cfg.xml</resource>
       <resource>src/main/resources/log4j.properties</resource>
       <resource>src/main/resources/log4j.xml</resource>
       <resource>src/main/resources/messages.properties</resource>
-      <resource>src/main/resources/hibernate.cfg.xml</resource>
-      <resource>src/main/webapp/WEB-INF/web.xml</resource>
       <resource filtered="false">src/main/webapp/css/vraptor_theme.css</resource>
       <resource filtered="false">src/main/webapp/images/bgHeader.png</resource>
       <resource filtered="false">src/main/webapp/images/ldl-trans.png</resource>
@@ -24,10 +21,8 @@
       <resource filtered="false">src/main/webapp/images/yellowArrow-trans.png</resource>
       <resource filtered="false">src/main/webapp/js/jquery.js</resource>
       <resource filtered="false">src/main/webapp/META-INF/MANIFEST.MF</resource>
-      <resource filtered="false">src/main/webapp/WEB-INF/jsp/produtos/edita.jsp</resource>
-      <resource filtered="false">src/main/webapp/WEB-INF/jsp/produtos/formulario.jsp</resource>
-      <resource filtered="false">src/main/webapp/WEB-INF/jsp/produtos/lista.jsp</resource>
       <resource filtered="false">src/main/webapp/WEB-INF/jsp/readme.txt</resource>
+      <resource>src/main/webapp/WEB-INF/web.xml</resource>
       <resource filtered="false">src/main/webapp/footer.jsp</resource>
       <resource filtered="false">src/main/webapp/header.jsp</resource>
       <resource filtered="false">src/main/webapp/index.html</resource>
