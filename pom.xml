@@ -6,7 +6,7 @@
 	
 	<groupId>br.com.caelum.vraptor.archetypes</groupId>
 	<artifactId>vraptor-hibernate-archetype</artifactId>
-	<version>0.0.1</version>
+	<version>0.0.2</version>
 	
 	<name>VRaptor Archetype</name>
 	<description>VRaptor web application sample using hibernate</description>
