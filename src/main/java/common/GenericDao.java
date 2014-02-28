@@ -42,5 +42,4 @@ public class GenericDao<T, ID extends Serializable> {
 	public List<T> listAll() {
 		return this.session.createCriteria(oClass).list();
 	}
-	
 }

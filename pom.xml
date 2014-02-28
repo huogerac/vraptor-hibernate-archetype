@@ -31,8 +31,8 @@
 	</licenses>
 
 	<dependencies>
-		
-	    <!-- JSTL -->
+
+		<!-- JSTL -->
 		<dependency>
 			<groupId>jstl</groupId>
 			<artifactId>jstl</artifactId>
@@ -63,6 +63,12 @@
 			<artifactId>hibernate-envers</artifactId>
 			<version>4.2.1.Final</version>
 			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.hibernate.javax.persistence</groupId>
+			<artifactId>hibernate-jpa-2.0-api</artifactId>
+			<version>1.0.1.Final</version>
 		</dependency>
 	</dependencies>
 
