@@ -1,4 +1,4 @@
-package ${packageName}.common;
+package common;
 
 import java.io.Serializable;
 import java.lang.reflect.ParameterizedType;
@@ -42,5 +42,4 @@ public class GenericDao<T, ID extends Serializable> {
 	public List<T> listAll() {
 		return this.session.createCriteria(oClass).list();
 	}
-	
 }

@@ -1,4 +1,4 @@
-package ${packageName}.common;
+package common;
 
 import java.util.List;
 
